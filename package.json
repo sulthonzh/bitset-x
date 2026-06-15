@@ -1,0 +1,20 @@
+{
+  "name": "bitset-x",
+  "version": "1.0.0",
+  "description": "Zero-dep bitset (bit array) with full bitwise ops, range ops, iteration, and CLI",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "bitset": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "keywords": ["bitset", "bitmap", "bit-array", "bit-manipulation", "population-count", "bitwise"],
+  "license": "MIT",
+  "author": "sulthonzh"
+}
