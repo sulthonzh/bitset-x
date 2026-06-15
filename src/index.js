@@ -299,7 +299,9 @@ export class Bitset {
     if (fromIndex >= this._size) fromIndex = this._size - 1;
     let w = wordIndex(fromIndex);
     // Mask off bits above fromIndex
-    let word = this._words[w] & ((1 << ((fromIndex & WORD_MASK) + 1)) - 1);
+    const bitPos = fromIndex & WORD_MASK;
+    const mask = bitPos === 31 ? 0xFFFFFFFF : (1 << (bitPos + 1)) - 1;
+    let word = this._words[w] & mask;
     while (true) {
       if (word !== 0) {
         return w * BITS_PER_WORD + (31 - Math.clz32(word));

@@ -85,7 +85,8 @@ describe('Range operations', () => {
     const bs = new Bitset(16);
     bs.setRange(0, 4);
     bs.toggleRange(2, 6);
-    assert.deepEqual(bs.toArray(), [0,1,3,4,5,6]);
+    // 0,1,2,3,4 set → toggle 2,3,4,5,6 → 0,1 stay, 2,3,4 cleared, 5,6 set
+    assert.deepEqual(bs.toArray(), [0,1,5,6]);
   });
   it('countRange', () => {
     const bs = new Bitset(32);
