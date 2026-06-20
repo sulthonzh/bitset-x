@@ -12,9 +12,32 @@
     "bitset": "./src/cli.js"
   },
   "scripts": {
-    "test": "node --test test/"
+    "test": "node --test test/*.test.js"
   },
-  "keywords": ["bitset", "bitmap", "bit-array", "bit-manipulation", "population-count", "bitwise"],
+  "keywords": [
+    "bitset",
+    "bitmap",
+    "bit-array",
+    "bit-manipulation",
+    "population-count",
+    "bitwise"
+  ],
   "license": "MIT",
-  "author": "sulthonzh"
+  "author": "sulthonzh",
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sulthonzh/bitset-x.git"
+  },
+  "homepage": "https://github.com/sulthonzh/bitset-x",
+  "bugs": {
+    "url": "https://github.com/sulthonzh/bitset-x/issues"
+  }
 }
