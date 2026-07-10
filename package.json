@@ -39,5 +39,8 @@
   "homepage": "https://github.com/sulthonzh/bitset-x",
   "bugs": {
     "url": "https://github.com/sulthonzh/bitset-x/issues"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0"
   }
 }
