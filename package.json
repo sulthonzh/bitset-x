@@ -41,7 +41,7 @@
     "url": "https://github.com/sulthonzh/bitset-x/issues"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.31.0"
+    "@changesets/cli": "^3.0.0"
   },
   "publishConfig": {
     "access": "public"
